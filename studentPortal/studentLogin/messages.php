@@ -1,155 +1,169 @@
-<?php 
-    session_start();
-    if(!isset($_SESSION['student_email'])){
-      echo "<script>window.open('../index.php','_self')</script>";
-    }
-    else {
-    include("../functions/functions.php");  
-?>
+<?php
+session_start();
+if (!isset($_SESSION['student_email'])) {
+    echo "<script>window.open('../index.php','_self')</script>";
+} else {
+    include("../functions/functions.php");
+    ?>
 
-<?php 
+    <?php
     // get Logged users name
     $user_email = $_SESSION['student_email'];
     $get_user = "SELECT * FROM students WHERE student_email= '$user_email'";
-    $run_user = mysqli_query($con,$get_user);
+    $run_user = mysqli_query($con, $get_user);
     $row = mysqli_fetch_array($run_user);
 
     $user_name = $row['student_username'];
     $user_image = $row['student_dp'];
     $user_id = $row['student_id'];
-?>
+    ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>E-Note | Student Portal | Welcome </title>
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/bootstrap.min.css">
-  <link rel="stylesheet" href="../styles/font_awesome.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>E-Note | Student Portal | Welcome </title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/font_awesome.css">
 
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/fontawesome.min.js"></script>
-  <style>
-  .headerBtn{
-    font-weight: 600;
-    font-size: 20px;
-    border-radius: 0px;
-    background: #18605F;
-    border: #18605F;
-    color: white;
-    width : 200px;
-  }
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fontawesome.min.js"></script>
+        <style>
+            .headerBtn {
+                font-weight: 600;
+                font-size: 20px;
+                border-radius: 0px;
+                background: #18605F;
+                border: #18605F;
+                color: white;
+                width: 200px;
+            }
 
-  .headerBtn:hover{
-    text-decoration : none;
-    color: white;
-    background: rgb(7, 48, 47);
-  }
+            .headerBtn:hover {
+                text-decoration: none;
+                color: white;
+                background: rgb(7, 48, 47);
+            }
 
-  th {
-    padding : 10px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    border-bottom : solid white 2px;
-  }
+            th {
+                padding: 10px;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                border-bottom: solid white 2px;
+            }
 
-  td {
-    padding : 5px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    border-bottom : solid white 1px;
-  }
+            td {
+                padding: 5px;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                border-bottom: solid white 1px;
+            }
 
-  td a {
-    color: white;
-  }
+            td a {
+                color: white;
+            }
 
-  td a:hover {
-    color: white;
-  }
+            td a:hover {
+                color: white;
+            }
 
-  .replyBox{
-    color: white;
-    font-size: 18px;
-    background: #18605F;
-  }
+            .replyBox {
+                color: white;
+                font-size: 18px;
+                background: #18605F;
+            }
 
-  .replyBox textarea {
-    width: 700px;
-    margin-left : 0px;
-    margin-top :15px;
-  }
+            .replyBox textarea {
+                width: 700px;
+                margin-left: 0px;
+                margin-top: 15px;
+            }
 
-  .replyBox .myButton{
-    background: #18605F;
-    color: white;
-    font-weight: 600;
-    width : 140px;
-    border-radius: 0px;
-  }
+            .replyBox .myButton {
+                background: #18605F;
+                color: white;
+                font-weight: 600;
+                width: 140px;
+                border-radius: 0px;
+            }
 
-  .replyBox .myButton:hover{
-    background: rgb(7, 48, 47);
-  }
-  </style>
-</head>
+            .replyBox .myButton:hover {
+                background: rgb(7, 48, 47);
+            }
+        </style>
+    </head>
 
-<body>
-  <header class="navbar">
-    <div class="logoDiv">
-      <a href="index.php"><img src="../images/logo.jpg" alt="E-Note" class="logo img-responsive"></a>
-    </div>
-    <div class="headerDropDown">
-      <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" class="headerDropDown">
-          <?php echo "@".$user_name; ?>
-        </a>
-        <div class="dropdown-menu">
-          <a href="../functions/sign_out.php" class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout </a>
+    <body>
+    <header class="navbar">
+        <div class="logoDiv">
+            <a href="index.php"><img src="../images/logo.jpg" alt="E-Note" class="logo img-responsive"></a>
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- Navbar -->
-  <nav class="navbar studentNav" style="background:white;">
-    <div class="navbar-end">
-      <div class="navbar-item btn-group ">
-        <a href="ourTeacher.php"><button class="button">Our Teachers</button></a>
-        <a href="index.php"><button class="button">Questions</button></a>
-        <a href="contactUs.php"> <button class="button">Contact</button></a>
-      </div>
-    </div>
-  </nav>
-  <div class="myContainer">
-    <div class="sideBar">
-      <img src="./profilePics/<?php echo $user_image;?>" alt="Image">
-      <h5><?php echo "@".$user_name; ?></h5>
-      <a href="profile.php"><button class="btn">Profile</button></a>
-      <a href="messages.php"><button class="btn">Messages</button></a>
-      <a href="index.php"><button class="btn">Questions</button></a>
-    </div>
-    <div class="homeContent">
-    <div class="messageBox" style="margin-left: 20%;">
-      <div class="msgBoxHeader">
-        <a href ="messages.php?sentMessages" class="btn headerBtn">Sent Messages</a>
-      </div>
+        <div class="headerDropDown">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" class="headerDropDown">
+                    <?php echo "@" . $user_name; ?>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="../functions/sign_out.php" class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar studentNav" style="background:white;">
+        <div class="navbar-end">
+            <div class="navbar-item btn-group ">
+                <a href="ourTeacher.php">
+                    <button class="button">Our Teachers</button>
+                </a>
+                <a href="index.php">
+                    <button class="button">Questions</button>
+                </a>
+                <a href="contactUs.php">
+                    <button class="button">Contact</button>
+                </a>
+                <a href="notes.php">
+                    <button class="button">Note</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="myContainer">
+        <div class="sideBar">
+            <img src="./profilePics/<?php echo $user_image; ?>" alt="Image">
+            <h5><?php echo "@" . $user_name; ?></h5>
+            <a href="profile.php">
+                <button class="btn">Profile</button>
+            </a>
+            <a href="messages.php">
+                <button class="btn">Messages</button>
+            </a>
+            <a href="index.php">
+                <button class="btn">Questions</button>
+            </a>
+        </div>
+        <div class="homeContent">
+            <div class="messageBox" style="margin-left: 20%;">
+                <div class="msgBoxHeader">
+                    <a href="messages.php?sentMessages" class="btn headerBtn">Sent Messages</a>
+                </div>
 
-        <?php if(isset($_GET['sentMessages'])){
-          include ("sentMessages.php");
-        }?>
+                <?php if (isset($_GET['sentMessages'])) {
+                    include("sentMessages.php");
+                } ?>
+            </div>
+        </div>
     </div>
-    </div>
-  </div>
-</body>
+    </body>
 
-</html>
+    </html>
 
-    <?php } ?>
+<?php } ?>
