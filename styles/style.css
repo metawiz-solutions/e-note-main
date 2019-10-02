@@ -1,0 +1,116 @@
+html {
+  background: #5C9292 !important;
+}
+
+/* Styles for Common Pages */
+
+
+header {
+  background: #5C9292 !important;
+  height: 140px !important;
+}
+
+.container-fluid{
+  background: #5C9292;
+}
+
+.myContainer{
+  background: #5C9292;
+}
+
+.logoDiv{ 
+  float:left; 
+  max-width:60%
+}
+
+.logo{
+  height: 70px;
+  margin: 50px 30px 0px 30px;
+}
+
+
+/* home page styles */
+.buttonDiv{
+  margin: 30px 10px 0px 10px;
+}
+
+nav{
+  height: 45px;
+}
+
+.buttonDiv button{
+  margin: 20px 15px;
+  width : 120px;
+  border-radius: 0px;
+  background: #18605F;
+  border: #18605F;
+  color: white;
+  font-weight: 600;
+}
+
+.buttonDiv button:hover{
+  background: rgb(7, 48, 47);
+  color: white;
+}
+
+/* nav .navbar-end{
+  margin-left: 75%;
+} */
+
+.navbar-item button{
+  width: 100px;
+  border-radius: 0px;
+  background:white;
+  border: #f5f5f5;
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 12px; 
+}
+
+.navbar-item button:hover{
+  border-left: 2px solid black;
+  transition: 0.3s;
+}
+
+.content{
+  /* background-image: url("../images/background1.jpg"); */
+  background: #5C9292 !important;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 1500px 550px;
+  background-position: left; 
+  margin-bottom: 0 !important;
+}
+
+.welcome{
+  text-align: center;
+  float:left;
+  padding-top: 180px;
+  margin-left: 480px;
+}
+
+.welcome .text-light {
+  font-weight: 600;
+}
+
+.welcomeButtons{
+  text-align: center;
+  background: #5C9292;
+}
+
+.welcomeButtons button{
+  width : 160px;
+  height: 46px;
+  margin: 20px 15px;
+  border-radius: 0px;
+  background: #18605F;
+  border: #18605F;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.welcomeButtons button:hover{
+  background: rgb(7, 48, 47);
+}

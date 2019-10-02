@@ -1,0 +1,618 @@
+html {
+  background: #5C9292 !important;
+  overflow-x: hidden;
+}
+
+/* Styles for Common Pages */
+body {
+  background: #5C9292 !important;
+}
+
+header {
+  background: #5C9292 !important;
+  height: 140px !important;
+}
+
+.container-fluid{
+  background: #5C9292;
+}
+
+.myContainer{
+  background: #5C9292;
+}
+
+.logoDiv{ 
+  float:left; 
+  max-width:60%
+}
+
+.logo{
+  height: 70px;
+  margin: 50px 30px 0px 30px;
+}
+
+
+/* home page styles */
+.buttonDiv{
+  margin: 30px 10px 0px 10px;
+}
+
+nav{
+  height: 45px;
+}
+
+.buttonDiv button{
+  margin: 20px 15px;
+  width : 120px;
+  border-radius: 0px;
+  background: #18605F;
+  border: #18605F;
+  color: white;
+  font-weight: 600;
+}
+
+.buttonDiv button:hover{
+  background: rgb(7, 48, 47);
+  color: white;
+}
+
+/* nav .navbar-end{
+  margin-left: 75%;
+} */
+
+.navbar-item button{
+  width: 100px;
+  border-radius: 0px;
+  background:white;
+  border: #f5f5f5;
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 12px; 
+}
+
+.navbar-item button:hover{
+  border-left: 2px solid black;
+  transition: 0.3s;
+}
+
+.content{
+  background-image: url("../images/background1.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 1500px 550px;
+  background-position: left; 
+  margin-bottom: 0 !important;
+}
+
+.welcome{
+  text-align: center;
+  float:left;
+  padding-top: 180px;
+  margin-left: 480px;
+}
+
+.welcome .text-light {
+  font-weight: 600;
+}
+
+.welcomeButtons{
+  text-align: center;
+  background: #5C9292;
+}
+
+.welcomeButtons button{
+  width : 160px;
+  height: 46px;
+  margin: 20px 15px;
+  border-radius: 0px;
+  background: #18605F;
+  border: #18605F;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.welcomeButtons button:hover{
+  background: rgb(7, 48, 47);
+}
+
+.modal-content{
+  border-radius: 0% !important;
+  background: rgba(92,146,146, 0.9) !important;
+}
+
+.modal-header{
+  border-bottom: none !important;
+  padding: 0% !important;
+}
+
+.modal-footer{
+  border-top: none !important;
+}
+
+.modal-header button{
+  width:50%;
+  border-radius: 0px;
+  font-weight: 600;
+  background: rgb(18, 78, 78);
+  height: 50px;
+  color: azure;
+}
+
+.modalClose{
+  width: 10% !important;
+}
+
+.modal-header button:hover{
+  background: rgb(7, 48, 47);
+  color: azure;
+}
+
+.modal-body .form-control{
+  border-radius: 0;
+  margin-top: 20px !important;
+  background: rgba(221, 235, 235, 0.7);
+  border: none;
+}
+
+.custom-control-label{
+  color: white;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.modal-footer button {
+  border-radius: 0px;
+  font-weight: 600;
+  background: rgb(18, 78, 78);
+  color: azure;
+}
+
+.modal-footer button:hover{
+  background: rgb(7, 48, 47);
+  color: azure;
+}
+
+.signInBody{
+  padding-top: 50px !important; 
+  height: 210px;
+}
+
+.signUpBody{
+  padding-top: 30px !important; 
+}
+
+
+/* contact page styles */
+
+.contactBox{
+  padding: 5%;
+  width: 90%;
+  margin: 0px 5%;
+}
+
+.contactBox h2{
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contactBox .inputs{
+  width: 35%;
+  float: left;
+  
+}
+
+.inputs .form-control {
+  height: 50px !important;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 0px;
+  background: rgba(221, 235, 235, 0.7);
+}
+
+.textArea textarea{
+  height: 195px;
+  margin-left: 5%;
+  width: 60%;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  resize: none;
+  background: rgba(221, 235, 235, 0.7);
+}
+
+.contactBox button {
+  width: 30%;
+  margin: 20px 45% 0px 25%; 
+  height: 50px !important;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 0px;
+  background: #18605F;
+  border: #18605F;
+  color: white;
+}
+
+.contactBox button:hover{
+  background: rgb(7, 48, 47);
+}
+
+
+/* Login Home */
+
+.headerDropDown .dropdown-toggle{
+  background: #18605F;
+  color: white;
+  font-weight: 600;
+}
+
+.headerDropDown .dropdown-toggle:hover{
+  background: rgb(7, 48, 47);
+}
+
+.headerDropDown .dropdown-item {
+  font-weight: 600;
+}
+
+
+/* side bar styles */
+
+.sideBar{
+  background: #18605F;
+  color: white;
+  font-weight: 600;
+  width: 20%;
+  height: 1450px;
+  float: left;
+  padding: 12px;
+  text-align: center;
+}
+
+.sideBar h5{
+  font-weight: 600;
+}
+
+.sideBar img{
+  margin-top:30px;
+  height: 140px;
+  width:60%;
+  object-fit: cover;
+  border: solid 2px #0B4B4A;
+  margin-bottom: 10px;
+}
+
+.sideBar button{
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background: #0B4B4A;
+  color: white;
+  font-weight: 600;
+  border-radius: 0%;
+}
+
+.sideBar button:hover{
+  background: rgb(7, 48, 47);
+}
+
+.homeContent{
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+background: #5C9292;
+}
+
+.homeContent h2{
+  margin-left: 20px;
+  color: white;
+  font-weight: 600;
+  float : left;
+}
+
+.homeContent .quizBtn{
+  background: #18605F;
+  float: right;
+  border-radius: 0px;
+  width: 200px;
+  color: white;
+  font-weight: 600;
+}
+
+.homeContent .quizBtn:hover{
+  background: #0B4B4A;
+}
+
+.questionsBox{
+  width: 80%;
+  height: 250px;
+  border: solid 2px #0B4B4A;
+  float: right;
+  padding: 0px 0 10px 10px;
+  margin-bottom: 20px;
+}
+
+.questionContent{
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  max-height: 190px;
+  overflow-y: auto;
+}
+
+.questionFooter button{
+  background: #18605F;
+  color: white;
+  font-weight: 600;
+  width : 140px;
+  border-radius: 0px;
+  margin: 10px 15px 5px 0px;
+}
+
+.questionFooter button:hover{
+  background: rgb(7, 48, 47);
+}
+
+.questionFooter span{
+  padding: 20px 25px 10px 10px;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  float: right;
+}
+
+.homepageModal .modal-content{
+  width: 700px !important;
+  margin-top:150px;
+  height: 320px;
+}
+
+.homepageModal textarea{
+  width:100%;
+  height: 200px;
+  margin-top: 20px;
+  resize: none;
+  background: rgba(221, 235, 235, 0.7);
+  border: none;
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.homepageModal button{
+  width:200px;
+}
+
+
+/* Student Login */
+
+
+.studentNav .navbar-end{
+  margin-left: 70%;
+}
+
+.studentNav button{
+  width: 140px;
+}
+
+.profileTimeline{
+  height: 200px;
+  background: white;
+  margin-left: 21%;
+}
+
+.coverPicture{
+  width: 100%;
+  background:#0B4B4A;
+  height: 150px;
+}
+
+.profilePicture{
+  height: 125px;
+  width: 125px;
+  margin-top: -100px;
+  border-radius: 90px;
+  margin-left: 40%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.profileTimelineFooter{
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.profileDetails{
+  margin-left: 21%;
+}
+
+.profileDetails .btn{
+margin: 5px;
+width:200px;
+font-size: 18px;
+font-weight: 600;
+border-radius: 0px;
+background: #5C9292;
+border: none;
+}
+
+.profileDetails .btn:hover{
+  background: #18605F;
+}
+
+.ProfileDetailsBox{
+  border: 1px solid black;
+  padding: 25px;
+}
+
+.singleDetails{
+  padding: 5px;
+  margin-bottom:10px;
+}
+
+.singleDetails span{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ourTeachersHeader{
+margin-left: 26%;
+color: rgb(252, 252, 252);
+font-weight: bold;
+}
+
+.eachOurTeacher{
+  margin-top: 20px;
+  float: left;
+  width:300px;
+  height: 380px;
+  margin-left: 40px;
+}
+
+.teacherPhoto{
+  border: 1px solid black;
+  width: 60%;
+  height: 220px;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.messageBtn .btn{
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 0px;
+  background: #18605F;
+  color: white;
+  font-weight: bold;
+}
+
+.teacherDetails p{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.messageBox{
+  
+  height: 100px;
+  width: 100%;
+  padding: 15px 25px 5px 23%;
+}
+
+.inboxBox {
+  width: 25%;
+  border: solid black 1px;
+  height: 500px;
+  float: left;
+}
+
+.singleMessages {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.singleMessages h3{
+  color :black;
+  margin: 10px;
+  font-weight : bold;
+}
+
+.singleInbox {
+  width: 75%;
+  border: solid black 1px;
+  height: 500px;
+  float: right;
+}
+
+.messageBy{
+  height: 70px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.messageBy .name{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.messageBy .username{
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.singleQuestionsBox{
+  width: 80%;
+  border: solid 2px #0B4B4A;
+  float: right;
+  padding: 0px 0 10px 10px;
+  margin-bottom: 20px;
+}
+
+.singleQuestionContent {
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  height: 190px;
+  overflow-y: scroll;
+}
+
+.singlequestionFooter button{
+  background: #18605F;
+  color: white;
+  font-weight: 600;
+  width : 140px;
+  border-radius: 0px;
+  margin: 10px 15px 5px 0px;
+}
+
+.singlequestionFooter button:hover{
+  background: rgb(7, 48, 47);
+}
+
+.singlequestionFooter span{
+  padding: 20px 25px 10px 10px;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  float: right;
+}
+
+/* teacher login */
+
+.teacherNav .navbar-end{
+  margin-left: 85%;
+}
+
+.teacherNav button{
+  width: 120px;
+}
+
+.answersBox{
+  width: 80%;
+  border: solid 2px #0B4B4A;
+  float: right;
+  padding: 0px 0 10px 10px;
+  margin-bottom: 20px;
+}
+
+.answerContent {
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.answerFooter span{
+  padding: 20px 25px 10px 10px;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  float: right;
+}
